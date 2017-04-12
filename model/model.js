@@ -4,12 +4,12 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let todoSchema = new Schema({
-    username: string,
-    todo: string,
+    username: String,
+    todo: String,
     isDone: Boolean,
     hasAttachment: Boolean
 });
 
-let todos = mongoose.model('todos', todoSchema);
+let Todos = mongoose.model('Todos', todoSchema);
 
-module.exports = todos;
+module.exports = Todos;
